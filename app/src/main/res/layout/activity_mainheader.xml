@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".mainheader">
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVATE FILTERS"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif" />
+        <View
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Template Type"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Show All"
+                android:minHeight="0dp"
+                android:paddingLeft="15dp"
+                android:background="@color/body"
+                android:paddingRight="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pro Template"
+                    android:paddingLeft="15dp"
+                    android:minHeight="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/body"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Template"
+                    android:minHeight="0dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/body"
+                    android:paddingRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/filer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <RadioButton
+                android:layout_marginLeft="4dp"
+                android:id="@+id/used"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostly Used"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/blue"
+                android:textSize="15sp"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <RadioButton
+                android:layout_marginLeft="4dp"
+                android:id="@+id/liked"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostly Liked"
+                android:textSize="15sp"
+                android:buttonTint="@color/blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+        </RadioGroup>
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by Education"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <RadioGroup
+                android:id="@+id/filer2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <RadioButton
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/shsl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Senior High School"
+                    android:layoutDirection="rtl"
+                    android:buttonTint="@color/blue"
+                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <RadioButton
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/vhsl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vocational High School"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/blue"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <RadioButton
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/dbd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diploma / Bachelor Degree"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/blue"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <RadioButton
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/md"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Master / Doctorate"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/blue"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design Composition"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+                <CheckBox
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/wsb"
+                    android:padding="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="With Short Biography"
+                    android:layoutDirection="rtl"
+                    android:buttonTint="@color/blue"
+                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <CheckBox
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/wi"
+                    android:padding="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="With Work /Internship Experience"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/blue"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/woe"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With Organization Experience"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/blue"
+                android:textSize="15sp"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/wh"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With Hobby"
+                android:textSize="15sp"
+                android:buttonTint="@color/blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/wcl"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With Certificate List"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/blue"
+                android:textSize="15sp"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/wr"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With References"
+                android:textSize="15sp"
+                android:buttonTint="@color/blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/wss"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With Soft Skills"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/blue"
+                android:textSize="15sp"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+            <CheckBox
+                android:layout_marginLeft="4dp"
+                android:id="@+id/whs"
+                android:padding="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="With Hard Skills"
+                android:textSize="15sp"
+                android:buttonTint="@color/blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="APPLY"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_margin="15dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RESET"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:background="@color/gray"
+                android:layout_margin="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

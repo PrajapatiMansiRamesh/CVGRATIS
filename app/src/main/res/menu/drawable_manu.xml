@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp_Read">
+
+        <item
+            android:id="@+id/item_a"
+            android:checkable="true"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/item_b"
+            android:checkable="true"
+            android:icon="@drawable/ic_lock"
+            android:title="Change Password" />
+    </group>
+    <group android:id="@+id/grp_wacth">
+        <item
+            android:id="@+id/item_g"
+            android:checkable="true"
+            android:icon="@drawable/ic_priority"
+            android:title="How to Use" />
+        <item
+            android:id="@+id/item_d"
+            android:checkable="true"
+            android:icon="@drawable/ic_invitation"
+            android:title="Invite a Friend" />
+        <item
+            android:id="@+id/item_e"
+            android:checkable="true"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/item_f"
+            android:checkable="true"
+            android:icon="@drawable/ic_description"
+            android:title="Terms and Condition" />
+    </group>
+    <item android:id="@+id/item_h"
+        android:checkable="true"
+        android:icon="@drawable/ic_logout"
+        android:title="Sign Out"
+        />
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:text="SOCIAL MEDIA"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/selectedsm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <RadioButton
+            android:layout_marginLeft="4dp"
+            android:id="@+id/instagram"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Instagram"
+            android:layoutDirection="rtl"
+            android:buttonTint="@color/blue"
+            android:textSize="15sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <RadioButton
+            android:layout_marginLeft="4dp"
+            android:id="@+id/facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textSize="15sp"
+            android:buttonTint="@color/blue"
+            android:textColor="@color/black"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <RadioButton
+            android:layout_marginLeft="4dp"
+            android:id="@+id/linkedin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Linkedin"
+            android:textSize="15sp"
+            android:buttonTint="@color/blue"
+            android:textColor="@color/black"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <RadioButton
+            android:layout_marginLeft="4dp"
+            android:id="@+id/twitter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:textSize="15sp"
+            android:buttonTint="@color/blue"
+            android:textColor="@color/black"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="OK"
+        android:textColor="@color/white"/>
+</LinearLayout>
