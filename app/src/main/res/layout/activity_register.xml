@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/register"
+            android:fontFamily="@font/montserratbold"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="15sp"/>
@@ -60,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
+            android:fontFamily="@font/montserrat_regular"
             android:inputType="phone"
             android:singleLine="true"/>
     </LinearLayout>
@@ -69,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_marginBottom="10dp"
         android:hint="Full Name"
         android:singleLine="true"/>
@@ -77,6 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:hint="Email"
@@ -89,6 +93,7 @@
          android:layout_marginLeft="20dp"
          android:layout_marginRight="20dp"
          android:layout_marginBottom="10dp"
+         android:fontFamily="@font/montserrat_regular"
          android:hint="Birthday"
          android:drawableLeft="@drawable/ic_calendar"
          android:drawablePadding="5dp"
@@ -100,6 +105,7 @@
           android:layout_marginLeft="20dp"
           android:layout_marginRight="20dp"
           android:layout_marginBottom="10dp"
+          android:fontFamily="@font/montserrat_regular"
           android:hint="Male"
           android:drawableRight="@drawable/arrow_right"/>
     <EditText
@@ -107,6 +113,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:hint="Address" />
@@ -115,6 +122,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:hint="Recent Education" />
@@ -124,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword"
         android:hint="Password" />
@@ -143,6 +152,7 @@
         android:id="@+id/registerbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/register"
         android:textStyle="bold"
         android:textColor="@color/white"

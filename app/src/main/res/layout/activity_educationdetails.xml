@@ -15,6 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
             android:text="EDUCATION BACKGROUND"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
@@ -35,6 +36,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20dp"
+            android:fontFamily="@font/montserratbold"
             android:text="ELEMENTARY SCHOOL"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"/>
@@ -68,6 +70,7 @@
                             android:layout_marginRight="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
                             android:hint="Year"/>
                     </LinearLayout>
 
@@ -97,6 +100,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
+                            android:fontFamily="@font/montserrat_regular"
                             android:hint="Year"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -108,6 +112,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="School Name" />
         <ImageView
             android:layout_width="match_parent"
@@ -153,6 +158,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
                         android:hint="Year"/>
                 </LinearLayout>
 
@@ -182,6 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
+                        android:fontFamily="@font/montserrat_regular"
                         android:hint="Year"/>
                 </LinearLayout>
             </LinearLayout>
@@ -193,6 +200,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="School Name" />
         <ImageView
             android:layout_width="match_parent"
@@ -238,6 +246,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
                         android:hint="Year"/>
                 </LinearLayout>
 
@@ -267,6 +276,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
+                        android:fontFamily="@font/montserrat_regular"
                         android:hint="Year"/>
                 </LinearLayout>
             </LinearLayout>
@@ -277,6 +287,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="School Name" />
         <EditText
@@ -285,6 +296,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="Major" />
         <Button
@@ -296,6 +308,7 @@
             android:layout_centerHorizontal="true"
             android:text="Add School"
             android:layout_marginBottom="150dp"
+            android:fontFamily="@font/montserrat_extrabold"
             android:background="@drawable/dash_border"
             android:padding="10dp" />
     </LinearLayout>

@@ -15,6 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
             android:text="SOFT SKILLS"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
@@ -37,6 +38,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="20dp"
+                android:fontFamily="@font/montserratbold"
                 android:text="SKILL #1"
                 android:layout_marginBottom="10dp"/>
             <EditText
@@ -44,12 +46,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Communication, Teamwork etc" />
             <EditText
                 android:id="@+id/sp1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Skill Percentage (50% - 98%)" />
             <ImageView
                 android:layout_width="match_parent"
@@ -63,17 +67,20 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:text="SKILL #2"
+                android:fontFamily="@font/montserratbold"
                 android:layout_marginBottom="10dp"/>
             <EditText
                 android:id="@+id/course2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Negotiate, Loyality etc" />
             <EditText
                 android:id="@+id/sp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
                 android:layout_marginBottom="10dp"
                 android:hint="Skill Percentage (50% - 98%)" />
             <ImageView
@@ -86,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:fontFamily="@font/montserratbold"
                 android:textSize="20dp"
                 android:text="SKILL #3"
                 android:layout_marginBottom="10dp"/>
@@ -94,12 +102,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Leadership, Public Speaking etc" />
             <EditText
                 android:id="@+id/sp3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Skill Percentage (50% - 98%)" />
             <ImageView
                 android:layout_width="match_parent"
@@ -137,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next"
+            android:fontFamily="@font/montserrat_extrabold"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:background="@color/blue"/>

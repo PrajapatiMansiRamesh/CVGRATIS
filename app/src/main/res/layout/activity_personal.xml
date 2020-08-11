@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PERSONAL"
+            android:fontFamily="@font/montserratbold"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="15sp"/>
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="First Name"
             android:singleLine="true"/>
@@ -41,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="Last Name"
             android:singleLine="true"/>
@@ -51,6 +54,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="City of Birth"
             android:singleLine="true"/>
         <EditText
@@ -59,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="Date of Birth" />
         <EditText
@@ -68,6 +73,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Marital Status"
             android:drawableRight="@drawable/arrow_right"/>
         <EditText
@@ -77,12 +83,14 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Religion" />
         <EditText
             android:id="@+id/heightandwidth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:hint="Height and Weight(170 Cm / 60 Kg)" />
@@ -103,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next"
+            android:fontFamily="@font/montserrat_extrabold"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:background="@color/blue"/>

@@ -1,5 +1,6 @@
 package com.example.cvgratis;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -87,6 +89,7 @@ String current_gender=null;
         });
 
         birthDate.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 Calendar cal=Calendar.getInstance();
@@ -107,7 +110,9 @@ String current_gender=null;
                 tv.setPadding(10, 10, 10, 10);
                 tv.setGravity(Gravity.CENTER);
                 tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,20);
-                tv.setTypeface(null, Typeface.BOLD);
+//                tv.setTypeface(null, Typeface.BOLD);
+                Typeface typeface = getResources().getFont(R.font.montserratbold);
+                tv.setTypeface(typeface);
                 tv.setText("BIRTHDAY");
                 tv.setTextColor(Color.parseColor("#000000"));
                 tv.setBackgroundColor(Color.parseColor("#A9A9A9"));

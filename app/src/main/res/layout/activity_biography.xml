@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SHORT BIOGRAPHY"
+            android:fontFamily="@font/montserratbold"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="15sp"/>
@@ -37,20 +38,22 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="20dp"
+                android:fontFamily="@font/montserratbold"
                 android:text="SHORT BIOGRAPHY"
                 android:layout_marginBottom="10dp"/>
             <TextView
+                android:id="@+id/bibnote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
-                android:text="Write down your biography to fulfill the empty
-                              space with minimum 625 words."
+                android:fontFamily="@font/montserrat_regular"
                 android:textColor="@color/black"/>
             <EditText
                 android:id="@+id/biography"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Write your biography" />
         </LinearLayout>
     </ScrollView>
@@ -82,6 +85,7 @@
             android:layout_height="wrap_content"
             android:text="@string/next"
             android:textStyle="bold"
+            android:fontFamily="@font/montserrat_extrabold"
             android:textColor="@color/white"
             android:background="@color/blue"/>
     </LinearLayout>

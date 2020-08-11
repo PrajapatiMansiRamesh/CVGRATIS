@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CERTIFICATES"
+            android:fontFamily="@font/montserratbold"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="15sp"/>
@@ -36,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:fontFamily="@font/montserratbold"
                 android:textSize="20dp"
                 android:text="CERTIFICATE #1"
                 android:layout_marginBottom="10dp"/>
@@ -55,6 +57,7 @@
                         android:orientation="horizontal">
                         <EditText
                             android:id="@+id/from"
+                            android:fontFamily="@font/montserrat_regular"
                             android:layout_marginRight="20dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -67,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Certificate Name" />
             <ImageView
                 android:layout_width="match_parent"
@@ -80,7 +84,8 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="CERTIFICATE #2" />
+                android:text="CERTIFICATE #2"
+                android:fontFamily="@font/montserratbold"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,6 +105,7 @@
                             android:layout_marginRight="20dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
                             android:hint="Year"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -109,6 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:hint="Certificate Name" />
             <ImageView
                 android:layout_width="match_parent"
@@ -146,6 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next"
+            android:fontFamily="@font/montserrat_extrabold"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:background="@color/blue"/>

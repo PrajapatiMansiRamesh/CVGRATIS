@@ -9,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/gray"
+    android:fontFamily="@font/montserratbold"
     android:text="SEX"
     android:textColor="@color/black"
     android:gravity="center_horizontal"
@@ -24,6 +25,7 @@
         android:id="@+id/male"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/black"
         android:text="MALE"
         android:layoutDirection="rtl"
@@ -34,6 +36,7 @@
     <RadioButton
             android:layout_marginLeft="4dp"
             android:id="@+id/female"
+        android:fontFamily="@font/montserrat_regular"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="FEMALE"
@@ -49,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
+        android:fontFamily="@font/montserrat_extrabold"
         android:text="OK"
         android:textColor="@color/white"/>
 </LinearLayout>

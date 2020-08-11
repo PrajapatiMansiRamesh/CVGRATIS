@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CONTACTS INFO"
+            android:fontFamily="@font/montserratbold"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:textSize="15sp"/>
@@ -31,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:hint="Recent Address (Short)" />
@@ -42,6 +44,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:hint="Email"
+            android:fontFamily="@font/montserrat_regular"
             android:inputType="textEmailAddress"
             android:singleLine="true"/>
         <EditText
@@ -53,6 +56,7 @@
             android:layout_marginBottom="10dp"
             android:hint="Phone Number"
             android:inputType="phone"
+            android:fontFamily="@font/montserrat_regular"
             android:singleLine="true"/>
         <EditText
             android:id="@+id/whatsappnumber"
@@ -60,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginBottom="10dp"
             android:hint="WhatsApp Number"
             android:inputType="phone"/>
@@ -68,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:hint="Instagram"
@@ -79,6 +85,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Instagram Username" />
     </LinearLayout>
     <LinearLayout
@@ -97,6 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next"
+            android:fontFamily="@font/montserrat_extrabold"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:background="@color/blue"/>
