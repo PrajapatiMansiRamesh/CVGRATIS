@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,43 +27,12 @@ import java.util.ArrayList;
 
 public class Cvtemplate extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 DrawerLayout drawerLayout;
-RecyclerView recyclerView;
-ArrayList arrayList;
-
-    private final String android_version_names[] = {
-            "CV-0001",
-            "CV-0002",
-            "CV-0001",
-            "CV-0002",
-            "CV-0001",
-            "CV-0002",
-            "CV-0001",
-            "CV-0002",
-            "CV-0001",
-            "CV-0002"
-    };
-
-    private final Integer android_image_urls[] = {
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon,
-            R.drawable.template_icon
-
-    };
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cvtemplate);
-        initViews();
         androidx.appcompat.widget.Toolbar toolbar=(Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
         drawerLayout=findViewById(R.id.drawer_layout);
@@ -80,7 +50,35 @@ ArrayList arrayList;
         drawerToggle.setHomeAsUpIndicator(R.drawable.ic_drawer);
 
         BottomNavigationView navigation=(BottomNavigationView)findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(navListener);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DashboardFragment()).commit();
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener=
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                    Fragment selectedFragment=null;
+                    switch (menuItem.getItemId()){
+                        case R.id.item1:
+                            selectedFragment=new DashboardFragment();
+                            break;
+                        case R.id.item2:
+                            selectedFragment=new ArchiveFragment();
+                            break;
+                        case R.id.item3:
+                            selectedFragment=new JobFragment();
+                            break;
+                        case R.id.item4:
+                            selectedFragment=new ProfileFragment();
+                            break;
+
+                    }
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+                    return true;
+                }
+            };
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -122,42 +120,4 @@ ArrayList arrayList;
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-    private void initViews(){
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
-        recyclerView.setHasFixedSize(true);
-        GridLayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),2);
-        recyclerView.setLayoutManager(layoutManager);
-        ArrayList<AndroidVersion> androidVersions = prepareData();
-        DataAdapter adapter = new DataAdapter(Cvtemplate.this,androidVersions);
-        recyclerView.setAdapter(adapter);
-
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(),
-                recyclerView, new RecyclerTouchListener.ClickListener() {
-            @Override
-            public void onClick(View view, int position) {
-//                Toast.makeText(Cvtemplate.this,"Item Clicked",Toast.LENGTH_SHORT).show();
-                Intent login_intent = new Intent(Cvtemplate.this, selectphoto.class);
-                startActivity(login_intent);
-            }
-
-            @Override
-            public void onLongClick(View view, int position) {
-
-            }
-        }));
-
-    }
-    private ArrayList<AndroidVersion> prepareData(){
-
-        ArrayList<AndroidVersion> android_version = new ArrayList<>();
-        for(int i=0;i<android_version_names.length;i++){
-            AndroidVersion androidVersion = new AndroidVersion();
-            androidVersion.setAndroid_version_name(android_version_names[i]);
-            androidVersion.setAndroid_image_url(android_image_urls[i]);
-            android_version.add(androidVersion);
-        }
-        return android_version;
-    }
-
 }

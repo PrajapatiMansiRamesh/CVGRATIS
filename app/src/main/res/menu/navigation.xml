@@ -6,15 +6,15 @@
     android:title="item1"/>
 <item
     android:id="@+id/item2"
-    android:icon="@drawable/ic_cube"
+    android:icon="@drawable/ic_historybox"
     android:title="tiem2"/>
     <item
         android:id="@+id/item3"
-        android:icon="@drawable/ic_copy"
+        android:icon="@drawable/ic_jobs"
         android:title="item3"/>
     <item
         android:id="@+id/item4"
-        android:icon="@drawable/ic_people"
+        android:icon="@drawable/ic_profile"
         android:title="tiem4"/>
 
 </menu>

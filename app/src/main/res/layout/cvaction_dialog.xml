@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cvname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:drawableLeft="@drawable/ic_edit"
+        android:textSize="20dp"
+        android:text="   MODIFY"
+        android:textColor="@color/black"/>
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:drawableLeft="@drawable/ic_delete"
+        android:textSize="20dp"
+        android:text="   DELETE"
+        android:textColor="@color/black"/>
+</LinearLayout>

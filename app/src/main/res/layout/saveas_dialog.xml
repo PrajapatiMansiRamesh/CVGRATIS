@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:text="SAVE AS"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/selectedsave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:padding="15dp">
+        <RadioButton
+            android:id="@+id/sjpg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratbold"
+            android:text="STANDARD JPG"
+            android:textStyle="bold"
+            android:layoutDirection="rtl"
+            android:buttonTint="@color/blue"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/sjpg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+        <RadioButton
+            android:id="@+id/cmykjpg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CMYK JPG"
+            android:fontFamily="@font/montserratbold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:buttonTint="@color/blue"
+            android:textColor="@color/black"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/cmykjpg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+        <RadioButton
+            android:id="@+id/pdf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserratbold"
+            android:textStyle="bold"
+            android:buttonTint="@color/blue"
+            android:textColor="@color/black"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/pdf_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/savecv"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="SAVE"
+        android:textColor="@color/white"/>
+</LinearLayout>

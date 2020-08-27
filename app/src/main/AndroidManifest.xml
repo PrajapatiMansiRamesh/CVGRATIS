@@ -11,18 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".biography"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".softskill"
+        <activity android:name=".giverating"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".hearskill"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".certificates"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".organizationexp"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".jobexperiences"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Cvpreview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hobbies"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".biography"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".softskill"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hearskill"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".certificates"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".organizationexp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".jobexperiences"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".educationdetails"
             android:theme="@style/AppTheme.NoActionBar" />

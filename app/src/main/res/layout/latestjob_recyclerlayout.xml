@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEB DEVELOPER"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratbold"/>
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_below="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPANY NAME"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_below="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="13dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:textColor="@color/darkgray" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posted 2 mins ago"
+            android:textSize="15dp"
+            android:textColor="@color/darkgray"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/view"
+            android:layout_below="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 "
+            android:textSize="15dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:textColor="@color/darkgray" />
+    </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_below="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+</RelativeLayout>
