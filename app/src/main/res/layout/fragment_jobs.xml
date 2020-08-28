@@ -18,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tab_latestjob"
-            android:text="MY ARCHIVE"
+            android:text="LATEST JOBS"
             />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tab_rating"
-            android:text="RATING" />
+            android:text="MY POST" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

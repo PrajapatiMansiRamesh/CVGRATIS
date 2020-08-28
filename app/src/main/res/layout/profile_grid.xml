@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/body"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="4">
+     <ImageView
+         android:id="@+id/profile_icon"
+         android:layout_width="0dp"
+         android:layout_height="40dp"
+         android:layout_weight="1"
+         android:src="@drawable/ic_edit"/>
+     <TextView
+         android:id="@+id/profile_name"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="3"
+         android:text="Account Settings"
+         android:textSize="20dp"
+         android:textColor="@color/black"
+         android:drawableRight="@drawable/arrow_right" />
+    </LinearLayout>
+    <ImageView
+        android:layout_below="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+</RelativeLayout>
