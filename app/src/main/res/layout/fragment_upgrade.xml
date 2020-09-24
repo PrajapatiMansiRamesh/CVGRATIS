@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/body"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Akun Gratis:"
+    android:fontFamily="@font/montserrat_extrabold"
+    android:textSize="25dp"
+    android:textColor="@color/blue"
+    android:drawableRight="@drawable/ic_information"
+    android:layout_marginBottom="20dp"/>
+    <CheckBox
+        android:id="@+id/chkbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="  3 Templates Daily"
+        android:button="@drawable/checkbox_custom"
+        />
+    <CheckBox
+        android:id="@+id/chkbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="  Daily Stored"
+        android:button="@drawable/checkbox_custom"
+        />
+    <CheckBox
+        android:id="@+id/chkbtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="  Bahasa Indonesia"
+        android:button="@drawable/checkbox_custom"
+        />
+    <CheckBox
+        android:id="@+id/chkbtn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="  Free Templates Selection"
+        android:button="@drawable/checkbox_custom"
+        />
+    <CheckBox
+        android:id="@+id/chkbtn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="  Ads"
+        android:button="@drawable/checkbox_custom"
+        />
+    <CheckBox
+        android:id="@+id/chkbtn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="  Jobs Vacancy"
+        android:button="@drawable/checkbox_custom"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akun PRO:"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:textSize="25dp"
+            android:drawableTint="@color/orange"
+            android:textColor="@color/orange"
+            android:drawableRight="@drawable/ic_information"
+            android:layout_marginBottom="20dp"/>
+        <CheckBox
+            android:id="@+id/chkbtn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  20 Templates Daily"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  Forever Stored"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  English &amp; Bahasa Indonesia"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  Free &amp; Pro Templates Selection"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  No Ads"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  Jobs Vacancy"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  Access Exclusive E-Book"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <CheckBox
+            android:id="@+id/chkbtn14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="  Application Letter Professional Template"
+            android:button="@drawable/checkbox_custom2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:text="UPGRADE TO PRO\n ($8 a Year)"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:weightSum="4">
+            <EditText
+                android:layout_width="0dp"
+                android:padding="3dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/textview_border"
+                android:hint="ENTER PROMO CODE"
+                android:layout_weight="3" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text="USE"
+                android:textColor="@color/white"
+                android:background="@color/gray"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

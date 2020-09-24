@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,6 +23,18 @@ public class AboutusFragment extends Fragment {
         TextView aboutus3=(TextView)v.findViewById(R.id.aboutus3);
         TextView aboutus4=(TextView)v.findViewById(R.id.aboutus4);
         TextView aboutus5=(TextView)v.findViewById(R.id.aboutus5);
+        Button showteam=(Button)v.findViewById(R.id.showteam);
+//        final LinearLayout team=(LinearLayout)v.findViewById(R.id.team);
+//        showteam.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(team.getVisibility() == View.VISIBLE){
+//                    team.setVisibility(View.GONE);
+//                }
+//                else
+//                    team.setVisibility(View.VISIBLE);
+//            }
+//        });
 
         aboutus1.setText("CV Gratis Indonesia, atau dikenal sebagai CVGratis dot id\n" +
                 "merupakan penyedia layanan pembuatan CV yang pada\n" +

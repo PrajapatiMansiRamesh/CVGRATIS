@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<TextView
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Help"/>
-</RelativeLayout>
+    android:background="@color/body"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT TOPICS"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:drawableRight="@drawable/arrow_right"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:text="SEND"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Working Hours:MON - SAT, (08:00 - 17:00 WIB)"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To get quick answer, please join our group share your experience and meet new people."
+        android:layout_marginBottom="15dp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:background="#3B5998"
+        android:text="    Facebook Group"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="start" />
+    <Button
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:background="#039be5"
+        android:text="    Telegram Group"
+        android:drawableLeft="@drawable/ic_telegram"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="start" />
+    <Button
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:background="#55CD6C"
+        android:text="    WhatsApp Group"
+        android:drawableLeft="@drawable/ic_whatsapp"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="start" />
+</LinearLayout>

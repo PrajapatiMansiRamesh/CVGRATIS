@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/body"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+<Switch
+    android:id="@+id/swtemplate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:theme="@style/SwitchTheme"
+    android:text="New Fresh Templates"
+    android:fontFamily="@font/montserrat_regular"/>
+    <Switch
+        android:id="@+id/swglobal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SwitchTheme"
+        android:layout_marginBottom="5dp"
+        android:text="Global Notifications"
+        android:fontFamily="@font/montserrat_regular"/>
+    <Switch
+        android:id="@+id/swjobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SwitchTheme"
+        android:layout_marginBottom="5dp"
+        android:text="Recomended Jobs (Handpicked)"
+        android:fontFamily="@font/montserrat_regular"/>
+    <Switch
+        android:id="@+id/swrl"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:text="Registered users with your referal link"
+        android:fontFamily="@font/montserrat_regular"
+        android:theme="@style/SwitchTheme"/>
+
+</LinearLayout>

@@ -42,13 +42,13 @@ public class ProfilemunuFragment extends Fragment {
                         selectedFragment=new LikedtemplateFragment();
                         break;
                     case "Upgrade Accounts":
-                        selectedFragment=new JobFragment();
+                        selectedFragment=new UpgradeFragment();
                         break;
                     case "Notifications":
-                        selectedFragment=new ProfileFragment();
+                        selectedFragment=new NotificationFragment();
                         break;
                     case "Invite Friends":
-                        selectedFragment=new ProfileFragment();
+                        selectedFragment=new InviteFriendFragment();
                         break;
                     case "About Us":
                         selectedFragment=new AboutusFragment();
